@@ -1,4 +1,4 @@
-const Button = ({ children, ...rest }) => {
+const AddButton = ({ children, ...rest }) => {
   return (
     <button
       {...rest}
@@ -9,4 +9,4 @@ const Button = ({ children, ...rest }) => {
   );
 };
 
-export default Button;
+export default AddButton;
