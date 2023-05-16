@@ -58,7 +58,7 @@ const App = () => {
         />
       )}
       <h1 className="p-16 text-center text-3xl font-bold uppercase tracking-wider">ToDo App</h1>
-      <div className="mx-auto w-[600px]">
+      <div className="mx-auto max-w-[620px] px-4">
         <TodoList
           list={todoList}
           onDone={handleDone}
