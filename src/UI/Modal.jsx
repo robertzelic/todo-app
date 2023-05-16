@@ -28,9 +28,9 @@ const Modal = ({ onClose, addNew, edit, onEdit }) => {
 
   return (
     <div className="fixed z-20 flex h-screen w-full items-center justify-center">
-      <div className="rounded-lg bg-slate-300 px-6 py-2">
+      <div className="mx-6 w-full max-w-[550px] rounded-lg bg-slate-300 px-6 py-2">
         <form onSubmit={handleSubmit}>
-          <div className="flex min-w-[500px] flex-col">
+          <div className="flex flex-col">
             <label htmlFor="item" className="my-2">
               {edit ? 'Edit' : 'Add new'}
             </label>
