@@ -2,6 +2,8 @@ import { useState } from 'react';
 import TodoList from './components/TodoList';
 import data from './data';
 import AddOrEditItem from './components/AddItem';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const App = () => {
   const [todoList, setTodoList] = useState(data);
@@ -66,10 +68,10 @@ const App = () => {
       </div>
       <div className="fixed bottom-0 right-0">
         <button
-          className="m-10 h-14 w-14 rounded-full bg-slate-400 text-3xl font-bold active:bg-slate-700 active:text-slate-300"
+          className="m-10 h-14 w-14 rounded-full bg-slate-400 text-2xl font-bold active:bg-slate-700 active:text-slate-300"
           onClick={() => setShowModal(true)}
         >
-          +
+          <FontAwesomeIcon icon={faPlus} />
         </button>
       </div>
     </main>
