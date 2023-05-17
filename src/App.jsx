@@ -66,14 +66,12 @@ const App = () => {
           onDelete={handleDeleteItem}
         />
       </div>
-      <div className="fixed bottom-0 right-0">
-        <button
-          className="mb-10 mr-10 h-14 w-14 rounded-full bg-slate-400 text-2xl font-bold active:bg-slate-700 active:text-slate-300"
-          onClick={() => setShowModal(true)}
-        >
-          <FontAwesomeIcon icon={faPlus} />
-        </button>
-      </div>
+      <button
+        className="fixed bottom-10 right-10 h-14 w-14 rounded-full bg-slate-400 text-2xl font-bold active:bg-slate-700 active:text-slate-300"
+        onClick={() => setShowModal(true)}
+      >
+        <FontAwesomeIcon icon={faPlus} />
+      </button>
     </main>
   );
 };
