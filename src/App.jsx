@@ -67,7 +67,7 @@ const App = () => {
         />
       </div>
       <button
-        className="fixed bottom-10 right-[50%] h-14 w-14 translate-x-[50%] rounded-full bg-slate-400 text-2xl font-bold active:bg-slate-700 active:text-slate-300 sm:right-10 sm:translate-x-0"
+        className="fixed bottom-10 right-1/2 h-14 w-14 translate-x-1/2 rounded-full bg-slate-400 text-2xl font-bold active:bg-slate-700 active:text-slate-300 md:right-10 md:translate-x-0"
         onClick={() => setShowModal(true)}
       >
         <FontAwesomeIcon icon={faPlus} />
