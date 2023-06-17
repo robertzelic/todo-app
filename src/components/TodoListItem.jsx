@@ -10,13 +10,13 @@ const TodoListItem = ({ children, onDone, onEdit, onDelete, item }) => {
       ) : (
         <p className="mr-auto">{children}</p>
       )}
-      <ListButton onClick={() => onDone(item.id)} done={item.done}>
+      <ListButton onClick={() => onDone(item.id)} done={item.done} label="done">
         <FontAwesomeIcon icon={faCheck} />
       </ListButton>
-      <ListButton onClick={() => onEdit(item.id, item.description)}>
+      <ListButton onClick={() => onEdit(item.id, item.description)} label="edit">
         <FontAwesomeIcon icon={faPenToSquare} />
       </ListButton>
-      <ListButton onClick={() => onDelete(item.id)}>
+      <ListButton onClick={() => onDelete(item.id)} label="delete">
         <FontAwesomeIcon icon={faTrashCan} />
       </ListButton>
     </li>

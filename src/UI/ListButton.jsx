@@ -1,4 +1,4 @@
-const ListButton = ({ children, onClick, done }) => {
+const ListButton = ({ children, onClick, done, label }) => {
   let classList = 'transition hover:opacity-70 active:text-slate-600';
 
   if (done) {
@@ -6,7 +6,7 @@ const ListButton = ({ children, onClick, done }) => {
   }
 
   return (
-    <button className={classList} onClick={onClick}>
+    <button className={classList} onClick={onClick} aria-label={label}>
       {children}
     </button>
   );

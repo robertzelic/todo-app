@@ -69,6 +69,7 @@ const App = () => {
       <button
         className="fixed bottom-10 right-1/2 h-14 w-14 translate-x-1/2 rounded-full bg-slate-400 text-2xl font-bold active:bg-slate-700 active:text-slate-300 md:right-10 md:translate-x-0"
         onClick={() => setShowModal(true)}
+        aria-label="add new task"
       >
         <FontAwesomeIcon icon={faPlus} />
       </button>
